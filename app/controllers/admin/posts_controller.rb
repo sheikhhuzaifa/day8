@@ -17,7 +17,7 @@ module Admin
     def create
       @post = Post.new(post_params)
       if @post.save
-        redirect_to root_path
+        redirect_to @post
       else
         render 'new'
       end

@@ -1,0 +1,5 @@
+<% if @post.persisted? %>
+  window.location.href = '<%= root_path %>';
+<% else %>
+  $('#post-form-errors').html('<%= j render 'shared/error_messages', resource: @post %>');
+<% end %>
