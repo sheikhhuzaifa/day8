@@ -15,13 +15,13 @@
         <td><%= p.title %></td>
         <td><%= p.body %></td>
        <td>
-  <button><%= link_to 'Show', p %></button>
+  <button><%= link_to 'Show', admin_post_path(p) %></button>
 </td>
 <td>
-  <button><%= link_to 'Edit', edit_post_path(p) %></button>
+  <button><%= link_to 'Edit', edit_admin_post_path(p) %></button>
 </td>
 <td>
-  <%= button_to 'Destroy', post_path(p), method: :delete, data: { confirm: 'Are you sure?' } %>
+  <%= button_to 'Destroy', admin_post_path(p), method: :delete, data: { confirm: 'Are you sure?' } %>
 </td>
 
       </tr>
@@ -31,4 +31,4 @@
 
 <br>
 
-<%= link_to 'New Friend', new_post_path %>
+<%= link_to 'New Friend', new_admin_post_path(p) %>
