@@ -1,14 +1,18 @@
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @author.name %>
-</p>
+<h1><%= @author.name %></h1>
 
-<p>
-  <strong>Email:</strong>
-  <%= @author.email %>
-</p>
+<h2>Books:</h2>
+<ul>
+  <% @books.each do |book| %>
+    <li><%= book.title %></li>
+     <li><%= book.name %></li>
+     <li><%= book.publish_at%></li>
+     <li><%= book.author.name %></li>
+  <% end %>
+</ul>
+
 
 <%= link_to 'Edit', edit_author_path(@author) %> |
 <%= link_to 'Back', authors_path %>
