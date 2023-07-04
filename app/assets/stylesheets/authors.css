@@ -1,0 +1,74 @@
+
+  #notice {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  /* Styling for the author name */
+  h1 {
+    color: blue;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  /* Styling for the books list */
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  /* Styling for the edit and back links */
+  .action-link {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  #notice {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  /* Styling for the table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  /* Styling for the "New Book" link */
+  .new-book-link {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
