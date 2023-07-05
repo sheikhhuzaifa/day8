@@ -6,10 +6,10 @@
 <h2>Books:</h2>
 <ul>
   <% @books.each do |book| %>
-    <li><%= book.title %></li>
-     <li><%= book.name %></li>
-     <li><%= book.publish_at%></li>
-     <li><%= book.author.name %></li>
+    <li><p>title :<%= book.title %></p></li>
+     <li><p>name :<%= book.name %></p></li>
+     <li><p>publish at :<%= book.publish_at %></p></li>
+     <li><p>author_id :<%= book.author_id %></p></li>
   <% end %>
 </ul>
 
